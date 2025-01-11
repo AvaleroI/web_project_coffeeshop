@@ -112,7 +112,75 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <div class="reservation__main">
+            <h1 class="reservation__title">Reservar una mesa</h1>
+            <form class="reservation__form">
+              <fieldset class="form__input">
+                <label for="name" class="form__label">Nombre *</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form__item form__item_name"
+                  placeholder="Nombre"
+                  required
+                />
+                <label for="number-of-people" class="form__label"
+                  >Número de comensales *</label
+                >
+                <input
+                  type="number"
+                  id="number-of-people"
+                  class="form__item form__item_number-of-people"
+                  placeholder="1-8"
+                  required
+                />
+                <label for="the-date" class="form__label">Fecha y hora *</label>
+                <input
+                  type="date"
+                  id="the-date"
+                  class="form__item form__item_date"
+                  required
+                />
+                <label for="e-mail" class="form__label"
+                  >Tu correo electrónico *</label
+                >
+                <input
+                  type="email"
+                  id="e-mail"
+                  class="form__item form__item_e-mail"
+                  placeholder="example@example.com"
+                  required
+                />
+              </fieldset>
+              <fieldset class="form__input">
+                <button type="submit" class="form__button">
+                  Reservar una mesa
+                </button>
+              </fieldset>
+              <fieldset class="form__input">
+                <label
+                  for="terms-conditions"
+                  class="form__label_checkbox form__label_el_terms"
+                >
+                  <input
+                    type="checkbox"
+                    id="terms-conditions"
+                    class="form__label_checkbox form__label_el_terms-conditions"
+                    checked
+                  />
+                  <span
+                    class="form__pseudo-label form__pseudo-label_type_checkbox"
+                  >
+                  </span>
+                  <span class="form__label-text"
+                    >Acepto los términos de uso</span
+                  >
+                </label>
+              </fieldset>
+            </form>
+          </div>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>
