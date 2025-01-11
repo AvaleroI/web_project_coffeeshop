@@ -216,7 +216,7 @@
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
-  margin: 0;
+  margin: auto;
 }
 
 .reservation__form {
@@ -305,7 +305,7 @@
   border: 1px solid black;
 }
 
-.reservation__label_checkbox_el_terms-conditions {
+.reservation__label_checkbox_terms-conditions {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -313,7 +313,7 @@
   clip: rect(0 0 0 0);
 }
 
-.reservation__label_el_terms-conditions:checked
+.reservation__label_terms-conditions:checked
   + .reservation__pseudo-label_type_checkbox {
   background-color: #2f80ed;
   background-image: url(../images/check.svg);
