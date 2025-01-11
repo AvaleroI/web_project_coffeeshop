@@ -209,13 +209,14 @@
 }
 
 .reservation__title {
-  margin-top: 100px;
-  margin-bottom: 80px;
+  padding-top: 100px;
+  padding-bottom: 80px;
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
+  margin: 0;
 }
 
 .reservation__form {
@@ -223,13 +224,13 @@
   margin-bottom: 120px;
 }
 
-.form__input {
+.reservation__input {
   border: 0;
   padding: 0;
   margin: 0;
 }
 
-.form__label {
+.reservation__label {
   display: block;
   font-family: Inter;
   font-style: normal;
@@ -238,7 +239,7 @@
   line-height: 20px;
 }
 
-.form__item {
+.reservation__item {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -252,7 +253,7 @@
   padding: 0;
 }
 
-.form__item::placeholder {
+.reservation__item::placeholder {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -261,12 +262,12 @@
   padding: 15px 20px;
 }
 
-.form__item[type="date"] {
+.reservation__item[type="date"] {
   box-sizing: border-box;
   padding: 0 20px;
 }
 
-.form__button {
+.reservation__button {
   display: block;
   border-radius: 4px;
   font-family: Inter;
@@ -282,21 +283,21 @@
   margin-bottom: 32px;
 }
 
-.form__button:hover {
+.reservation__button:hover {
   opacity: 0.7;
 }
 
-.form__label_checkbox {
+.reservation__label_checkbox {
   display: flex;
   justify-content: center;
   border-radius: 2px;
 }
 
-.form__label-text {
+.reservation__label-text {
   margin-left: 12px;
 }
 
-.form__pseudo-label {
+.reservation__pseudo-label {
   display: inline-block;
   vertical-align: middle;
   width: 20px;
@@ -304,7 +305,7 @@
   border: 1px solid black;
 }
 
-.form__label_el_terms-conditions {
+.reservation__label_checkbox_el_terms-conditions {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -312,7 +313,8 @@
   clip: rect(0 0 0 0);
 }
 
-.form__label_el_terms-conditions:checked + .form__pseudo-label_type_checkbox {
+.reservation__label_el_terms-conditions:checked
+  + .reservation__pseudo-label_type_checkbox {
   background-color: #2f80ed;
   background-image: url(../images/check.svg);
   background-repeat: no-repeat;
